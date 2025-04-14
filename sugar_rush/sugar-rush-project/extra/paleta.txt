@@ -1,0 +1,6 @@
+Azul escuro: #023047
+Azul claro: #8ECAE6
+Verde desconto: #7AFB78
+Roxo: #9747FF
+Rosa: #FF748C
+
