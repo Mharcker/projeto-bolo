@@ -21,11 +21,34 @@
   font-style: normal;
 }
 
+/*Configurando a caixa de texto*/
+input[type=text] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid var(--rosasugar);
+	background: transparent; /* ou rgba(233, 30, 99, 0.2); */
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: var(--rosasugar);
+	font-size: 12pt;
+}
+label {
+	display: block;
+	margin-bottom: 0.5em;
+	color: var(--rosasugar);
+	font-weight: 400;
+	font-size: 9pt;
+}
+input[type=text]::placeholder {
+  color: white;
+}
+/*Header*/
 .menuitem{
   list-style-type: none;
   font-size: 26pt;
   padding-left: 10px;
-  border-left: 1px solid white;
+  margin: 10px;
 }
 .menuitem a{
   color: white;
@@ -33,6 +56,9 @@
 }
 .menu{
   display: flex;
+}
+#barramenu{
+  border-left: 1px solid white;
 }
 header{
   background-color: var(--roxosugar);
@@ -47,8 +73,7 @@ main{
   display: flex;
   flex-direction: column;
 }
-.flexitem{
-}
+/*Seção 1*/
 #sec1{
   color: var(--rosasugar);
   font-size: 36pt;
@@ -56,9 +81,28 @@ main{
 #sec1 h2{
   font-size: 27pt;
 }
+/*Seção 2*/
 #sec2{
-  background-color: var(--rosasugar);
+  background-color: var(--rosasugar);  
+  display: flex;
 }
-#sec3{
+.cupitem{
+  padding: 2em;
+  background-color: white;
+  border-radius: 5px;
+}
+.discount{
+  padding: 2em;
+  background-color: var(--verdedesconto);
+  border-radius: 5px;
+}
+/*Seção 3*/
+.inputitem{
+  display: block;
+}
+.inputbox{
+  display: flex;
+}
+#sec3 div{
   background-color: var(--darkazul);
 }
